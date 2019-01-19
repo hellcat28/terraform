@@ -12,3 +12,6 @@ data "aws_availability_zones" "all" {}
 variable "server_port" {
   default = 8080
 }
+variable "sg_port" {
+  default = 80
+}
