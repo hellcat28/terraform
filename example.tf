@@ -64,9 +64,6 @@ resource "aws_elb" "example"
   }
 }
 
-
-
-
 resource "aws_security_group" "elb" {
   name = "terraform-example-instance"
   ingress {
@@ -85,7 +82,6 @@ resource "aws_security_group" "elb" {
     create_before_destroy = true
   }
 }
-
 
 output "elb_dns_name"
 {
